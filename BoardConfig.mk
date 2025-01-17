@@ -5,7 +5,6 @@
 #
 
 DEVICE_PATH := device/xiaomi/sheng
-
 # A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \

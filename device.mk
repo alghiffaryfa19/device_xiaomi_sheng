@@ -1,3 +1,9 @@
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2032
+TARGET_SCREEN_WIDTH := 3048
+
+PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
+
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
 
@@ -26,6 +32,10 @@ PRODUCT_COPY_FILES += \
 # Init
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.recovery.qcom.rc:recovery/root/init.recovery.qcom.rc
+
+# Light
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.xiaomi
 
 # Overlay
 PRODUCT_PACKAGES += \
