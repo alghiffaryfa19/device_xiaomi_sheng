@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lmodroid_sheng.mk
+    $(LOCAL_DIR)/lineage_sheng.mk
 
 COMMON_LUNCH_CHOICES := \
-    lmodroid_sheng-user \
-    lmodroid_sheng-userdebug \
-    lmodroid_sheng-eng
+    lineage_sheng-user \
+    lineage_sheng-userdebug \
+    lineage_sheng-eng
