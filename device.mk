@@ -33,6 +33,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.recovery.qcom.rc:recovery/root/init.recovery.qcom.rc
 
+# init
+$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_sheng)
+
 # Light
 PRODUCT_PACKAGES += \
     android.hardware.light-service.xiaomi
