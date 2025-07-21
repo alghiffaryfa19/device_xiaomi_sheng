@@ -37,8 +37,8 @@ PRODUCT_COPY_FILES += \
 $(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_sheng)
 
 # Light
-PRODUCT_PACKAGES += \
-    android.hardware.light-service.xiaomi
+#PRODUCT_PACKAGES += \
+#    android.hardware.light-service.xiaomi
 
 # Overlay
 PRODUCT_PACKAGES += \
