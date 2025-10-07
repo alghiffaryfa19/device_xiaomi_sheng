@@ -37,7 +37,7 @@ TARGET_NO_BOOTLOADER := true
 TARGET_SCREEN_DENSITY := 400
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_sheng
+$(call soong_config_set,libinit,vendor_init_lib,//$(DEVICE_PATH):libinit_sheng)
 
 # Kernel
 TARGET_NO_KERNEL_OVERRIDE := true
